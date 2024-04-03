@@ -11,10 +11,10 @@ vector<Location>  scale(vector<Location> locations, double s)
 			latitude = locations[i].getLatitude() / s;   // You must keep this operation (/). Do not change  this (/) opertion 
 			longitude = locations[i].getLongitude() / s; // You must keep this operation (/). Do not change  this (/) opertion 
 
-			scaledLocations[i].setLatitude(latitude);
-			scaledLocations[i].setLongitude(longitude);
+			scaledLocations.push_back(Location(latitude, longitude));
 		}
 	}
+
 	else
 	{
 

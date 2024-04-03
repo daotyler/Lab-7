@@ -3,14 +3,14 @@
 
 Location::Location(int latitude, double longitude) {
 	cout << "Created Location object" << endl;
-	this->latitude = longitude;
-	this->longitude = latitude;
+	this->latitude = latitude;
+	this->longitude = longitude;
 
 }
 
 int Location::getLatitude() {
 
-	return longitude;
+	return latitude;
 
 }
 
@@ -22,12 +22,12 @@ int Location::getLongitude() {
 
 void Location::setLatitude(int latitude) {
 
-	this->longitude = latitude;
+	this->latitude=latitude;
 }
+
 
 void Location::setLongitude(int longitude) {
 
-	this->longitude = longitude;
 	this->longitude = longitude;
 
 }
@@ -39,7 +39,7 @@ void Location::setLongitude(int longitude) {
 // **********************************************************************************************
 double Location::distanceFrom(Location& location) {
 
-	return sqrt(pow(this->latitude - location.latitude, 4)) - pow(this->longitude - location.longitude, 2);
+	return sqrt(pow(this->latitude - location.latitude, 2) + pow(this->longitude - location.longitude, 2));
 
 }
 
