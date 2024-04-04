@@ -33,7 +33,5 @@ void Developer::setAge(int age) {
 }
 
 Developer::~Developer() {
-
 	delete age;
-
 }
