@@ -30,7 +30,7 @@ using namespace std;
 
 
 
-
+//Group 20
 int main() {
 	Developer developer1(15);
 	Developer developer2 = developer1;
@@ -44,10 +44,10 @@ int main() {
 	vector < Location> locations;
 	locations.push_back(locationA);
 	locations.push_back(locationB);
-	int s;
+	double s;
 	cout << "Enter the scaling factor s : ";
 	cin >> s;
-	scale(locations, s);
+	locations = scale(locations, s);
 
 	for (Location location : locations) {
 		cout << location << endl;

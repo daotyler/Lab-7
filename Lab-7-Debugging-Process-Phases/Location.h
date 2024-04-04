@@ -2,10 +2,10 @@
 #include <iostream>
 using namespace std;
 class Location {
-public:
 	double latitude;
 	double longitude;
 public:
+	Location();
 	Location(int latitude, double longitude);
 	int getLatitude();
 	int getLongitude();

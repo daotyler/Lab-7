@@ -1,6 +1,11 @@
 #include"Location.h"
 #include<iostream>
 
+Location::Location()
+{
+	cout << "Created location object" << endl;
+}
+
 Location::Location(int latitude, double longitude) {
 	cout << "Created Location object" << endl;
 	this->latitude = latitude;

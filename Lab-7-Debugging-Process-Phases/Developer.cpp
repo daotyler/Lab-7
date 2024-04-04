@@ -1,6 +1,11 @@
 #include"Developer.h"
 #include<iostream>
 
+Developer::Developer()
+{
+	cout << "A developer object is created" << endl;
+}
+
 Developer::Developer(int age) {
 	cout << "A developer object is created" << endl;
 	this->age = new int;
